@@ -10,7 +10,7 @@ export const Modal = ({ imageUrl, onClose }) => {
       }
     };
     window.addEventListener("keydown", handleKeyPress);
-  }, []);
+  }, [onClose]);
 
   return (
     <img src={imageUrl} className={style.modal} alt="not loaded modal"></img>
