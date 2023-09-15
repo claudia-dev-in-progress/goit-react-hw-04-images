@@ -3,13 +3,12 @@ import PropTypes from "prop-types";
 import style from "./style.module.css";
 
 export const Modal = ({ imageUrl, onClose }) => {
-  const handleKeyPress = (event) => {
-    if (event.key === "Escape") {
-      onClose();
-    }
-  };
-
   useEffect(() => {
+    const handleKeyPress = (event) => {
+      if (event.key === "Escape") {
+        onClose();
+      }
+    };
     window.addEventListener("keydown", handleKeyPress);
   }, []);
 
