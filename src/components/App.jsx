@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { SearchBar } from "./SearchBar";
+import { SearchBar } from "./SearchBar/SearchBar";
 import { ImageGallery } from "./ImageGallery/ImageGallery";
 import { getImages } from "../api/api";
 import { Button } from "./Button/Button";

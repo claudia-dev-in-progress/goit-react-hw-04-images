@@ -1,5 +1,5 @@
 import { useState } from "react";
-import style from "./style.module.css";
+import style from "./SearchBar.module.css";
 import PropTypes from "prop-types";
 import { Icon } from "@iconify/react";
 
