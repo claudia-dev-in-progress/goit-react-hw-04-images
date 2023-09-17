@@ -25,11 +25,12 @@ export const App = () => {
 
   const loadMore = async () => {
     setIsLoading(true);
-    setPage(page + 1);
 
-    const response = await getImages(query, page, perPage);
+    const response = await getImages(query, page + 1, perPage);
 
-    setImages([...images, response.hits]);
+    setImages((prevImages) => [...prevImages, ...response.hits]);
+    setPage((prevPage) => prevPage + 1);
+
     setIsLoading(false);
   };
 
