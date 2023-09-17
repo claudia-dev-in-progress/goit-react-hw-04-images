@@ -1,9 +1,8 @@
 import PropTypes from "prop-types";
-import style from "./style.module.css";
 
 export const ImageGaleryItem = ({ imageUrl, onImageClick, largeImageUrl }) => {
   return (
-    <li className={style.galleryitem}>
+    <li>
       <img
         src={imageUrl}
         alt="Not loaded"

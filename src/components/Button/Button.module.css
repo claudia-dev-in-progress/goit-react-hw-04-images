@@ -1,0 +1,12 @@
+.load_more {
+  width: 200px;
+  height: 30px;
+  background-color: rgb(45, 45, 254);
+  color: white;
+  position: absolute;
+  left: 43%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  border-radius: 10px;
+  border: 1px solid black;
+}

@@ -1,10 +1,10 @@
 import { useState } from "react";
 import { SearchBar } from "./SearchBar";
-import { ImageGallery } from "./ImageGallery";
+import { ImageGallery } from "./ImageGallery/ImageGallery";
 import { getImages } from "../api/api";
-import { Button } from "./Button";
-import { Loader } from "./Loader";
-import { Modal } from "./Modal";
+import { Button } from "./Button/Button";
+import { Loader } from "./Loader/Loader";
+import { Modal } from "./Modal/Modal";
 
 export const App = () => {
   const [images, setImages] = useState([]);
